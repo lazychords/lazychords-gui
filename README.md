@@ -31,7 +31,6 @@ To build the project, you need a recent C++ compiler (this project uses C++11, s
 
 ```
 https://github.com/lazychords/lazychords-gui.git
-sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
 sudo apt-get install cmake make g++ libboost-dev  libboost−filesystem−dev qt5-default libqt5webkit5
 git submodule update --init --recursive
 mkdir build && cd build
