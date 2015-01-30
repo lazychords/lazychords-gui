@@ -1,6 +1,6 @@
 [submodule "libs/liblazychord"]
 	path = libs/liblazychord
-	url = git@github.com:lazychords/lazychords-lib.git
+	url = https://github.com/lazychords/lazychords-lib.git
 [submodule "libs/output"]
 	path = libs/output
-	url = git@github.com:lazychords/lazychords-output.git
+	url = https://github.com/lazychords/lazychords-output.git
