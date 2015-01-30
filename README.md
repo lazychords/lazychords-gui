@@ -1,6 +1,7 @@
 ![logo](logo.png)
 
 # Gui of the LazyChords project
+[![Build Status](https://travis-ci.org/lazychords/lazychords-gui.svg?branch=master)](https://travis-ci.org/lazychords/lazychords-gui)
 
 This is provides a userfrendly inteface to the Lazychords project.
 
