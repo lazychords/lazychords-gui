@@ -30,6 +30,7 @@ ExternalProject_Add(output
   INSTALL_COMMAND echo "success"
 )
 INCLUDE_DIRECTORIES(${PROJECT_SOURCE_DIR}/libs/output/src/)
+INCLUDE_DIRECTORIES(${PROJECT_SOURCE_DIR}/libs/output/libs/)
 LINK_DIRECTORIES(${PROJECT_SOURCE_DIR}/libs/output/)
 
 ############################
