@@ -29,7 +29,8 @@ ExternalProject_Add(output
   BINARY_DIR ${PROJECT_SOURCE_DIR}/libs/output
   INSTALL_COMMAND echo "success"
 )
-INCLUDE_DIRECTORIES(${PROJECT_SOURCE_DIR}/libs/liblazychord/src/)
+INCLUDE_DIRECTORIES(${PROJECT_SOURCE_DIR}/libs/output/src/)
+LINK_DIRECTORIES(${PROJECT_SOURCE_DIR}/libs/output/)
 
 ############################
 # LazyChords Lib
@@ -43,6 +44,7 @@ ExternalProject_Add(liblazychord
   INSTALL_COMMAND echo "success"
 )
 INCLUDE_DIRECTORIES(${PROJECT_SOURCE_DIR}/libs/liblazychord/src/)
+LINK_DIRECTORIES(${PROJECT_SOURCE_DIR}/libs/liblazychord/)
 
 
 
@@ -77,7 +79,7 @@ if(Qt5Widgets_FOUND AND Qt5Gui_FOUND AND Qt5Core_FOUND)
 
     ADD_DEPENDENCIES(LazyChords liblazychord output)
     QT5_USE_MODULES(LazyChords Widgets Core Gui WebKitWidgets)
-    TARGET_LINK_LIBRARIES(LazyChords ABCToMidi)
+    TARGET_LINK_LIBRARIES(LazyChords OutputLib)
     TARGET_LINK_LIBRARIES(LazyChords LazyChordsLib)
     TARGET_LINK_LIBRARIES(LazyChords m)
     IF(USE_ML)
