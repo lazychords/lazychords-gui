@@ -17,6 +17,7 @@ before_install:
     - "sudo update-alternatives --config g++"
     - "gcc --version"
     - sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
+    - sed -i 's/git@github.com:/https:\/\/github.com\//' libs/output/.gitmodules
     - git submodule update --init --recursive
 
     
