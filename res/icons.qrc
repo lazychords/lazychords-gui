@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/volmute.png</file>
+        <file>icons/vol3.png</file>
+        <file>icons/vol2.png</file>
+        <file>icons/vol1.png</file>
+        <file>icons/vol0.png</file>
+        <file>icons/Vide.png</file>
+        <file>icons/stop.png</file>
+        <file>icons/repeat.png</file>
+        <file>icons/play.png</file>
+        <file>icons/pause.png</file>
+        <file>icons/lazyy.ico</file>
+        <file>icons/lazychords_logo2.ico</file>
+    </qresource>
+</RCC>
