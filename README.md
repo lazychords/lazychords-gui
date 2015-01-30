@@ -11,7 +11,7 @@ This project aims at providing a tool to allow musicians to find suitable accomp
 This can be useful independently of the user's musical skills : 
 * For beginners, it allows a quick generation of an a ready-to-play accompaniement without any theoretical background about composition.
 * For advanced musicians, the software can be a source of interesting/unusual ideas, and speed up the overall composition process by providing a strong basis to start with.
-* 
+
 
 ## How does it work ?
 
