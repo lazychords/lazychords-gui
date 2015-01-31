@@ -1,6 +1,8 @@
 [submodule "libs/liblazychord"]
 	path = libs/liblazychord
 	url = https://github.com/lazychords/lazychords-lib.git
+    ignore = dirty
 [submodule "libs/output"]
 	path = libs/output
 	url = https://github.com/lazychords/lazychords-output.git
+    ignore = dirty
