@@ -30,8 +30,32 @@ The interface consist of a rendering of the melody score, the chord progression 
 To build the project, you need a recent C++ compiler (this project uses C++11, supported since gcc4.8), cmake, make, Qt5 and the Boost library.
 
 ```
-https://github.com/lazychords/lazychords-gui.git
+git clone https://github.com/lazychords/lazychords-gui.git
+cd lazychords-gui
 sudo apt-get install cmake make g++ libboost-dev  libboost−filesystem−dev qt5-default libqt5webkit5
+git submodule update --init --recursive
+mkdir build && cd build
+cmake ..
+make -j
+```
+
+On older systems, like Ubuntu 12.04, you can use the following instructions, derived from the build process on travis : 
+```
+sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
+sudo add-apt-repository -y "deb http://archive.ubuntu.com/ubuntu trusty universe
+sudo add-apt-repository -y "deb http://archive.ubuntu.com/ubuntu trusty main
+sudo apt-get update -qq
+sudo apt-get install -qq git libboost-dev libboost-test-dev libboost-program-options-dev cmake make
+sudo apt-get install qdbus qmlscene qt5-default qt5-qmake qtbase5-dev-tools qtchooser qtdeclarative5-dev xbitmaps xterm libqt5svg5-dev qttools5-dev qtscript5-dev qtdeclarative5-folderlistmodel-plugin qtdeclarative5-controls-plugin -y
+sudo apt-get install -qq qtbase5-dev qtdeclarative5-dev libqt5webkit5-dev
+sudo apt-get install -qq qt5-default qttools5-dev-tools
+sudo apt-get update; sudo apt-get install gcc-4.8 g++-4.8
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.8 20
+sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.8 20
+sudo update-alternatives --config gcc
+sudo update-alternatives --config g++
+git clone https://github.com/lazychords/lazychords-gui.git
+cd lazychords-gui
 git submodule update --init --recursive
 mkdir build && cd build
 cmake ..
