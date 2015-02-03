@@ -42,8 +42,8 @@ make -j
 On older systems, like Ubuntu 12.04, you can use the following instructions, derived from the build process on travis : 
 ```
 sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
-sudo add-apt-repository -y "deb http://archive.ubuntu.com/ubuntu trusty universe
-sudo add-apt-repository -y "deb http://archive.ubuntu.com/ubuntu trusty main
+sudo add-apt-repository -y "deb http://archive.ubuntu.com/ubuntu trusty universe"
+sudo add-apt-repository -y "deb http://archive.ubuntu.com/ubuntu trusty main"
 sudo apt-get update -qq
 sudo apt-get install -qq git libboost-dev libboost-test-dev libboost-program-options-dev cmake make
 sudo apt-get install qdbus qmlscene qt5-default qt5-qmake qtbase5-dev-tools qtchooser qtdeclarative5-dev xbitmaps xterm libqt5svg5-dev qttools5-dev qtscript5-dev qtdeclarative5-folderlistmodel-plugin qtdeclarative5-controls-plugin -y
